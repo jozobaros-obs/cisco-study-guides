@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jozobaros-obs.github.io/cisco-study-guides/sitemap.xml
