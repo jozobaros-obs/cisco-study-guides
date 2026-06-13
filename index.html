@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cisco Certification Study Guides — Free Samples · Jozef Baroš</title>
+<meta name="description" content="Free sample chapters from a series of Cisco certification study guides: CCNA Cybersecurity 200-201, AUTOCOR 350-901, CBRCOR 350-201, ENAUTO 300-435, and CCNA Automation. Download a sample, then get the full book on Leanpub.">
+<meta property="og:title" content="Cisco Certification Study Guides — Free Samples">
+<meta property="og:description" content="Free sample chapters for CCNA Cybersecurity, AUTOCOR, CBRCOR, ENAUTO, and CCNA Automation. Download and read before you buy.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#0a1428;
+    --slab:#0f1d3a;
+    --paper:#f3efe6;
+    --paper-line:#e4ddcd;
+    --copper:#c66b3d;
+    --copper-deep:#a8542c;
+    --wire:#3d6ea5;
+    --wire-glow:#5b9bd5;
+    --muted:#7d8aa0;
+    --ok:#3c9a6b;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    background:var(--ink);
+    color:var(--paper);
+    font-family:'Inter',system-ui,sans-serif;
+    line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  a{color:inherit;text-decoration:none}
+
+  /* ---------- HERO ---------- */
+  .hero{
+    position:relative;
+    padding:clamp(3.5rem,9vw,7rem) clamp(1.25rem,5vw,4rem) clamp(3rem,7vw,5rem);
+    border-bottom:1px solid rgba(91,155,213,.18);
+    overflow:hidden;
+  }
+  /* faint routing-table backdrop */
+  .hero::before{
+    content:"";
+    position:absolute;inset:0;
+    background-image:
+      linear-gradient(transparent 0 calc(100% - 1px), rgba(91,155,213,.05) calc(100% - 1px)),
+      linear-gradient(90deg, transparent 0 calc(100% - 1px), rgba(91,155,213,.05) calc(100% - 1px));
+    background-size:100% 2.1rem, 7rem 100%;
+    mask-image:radial-gradient(ellipse 90% 70% at 70% 20%, #000 30%, transparent 75%);
+    pointer-events:none;
+  }
+  .hero-inner{position:relative;max-width:1080px;margin:0 auto}
+  .eyebrow{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:.72rem;letter-spacing:.32em;text-transform:uppercase;
+    color:var(--wire-glow);
+    display:flex;align-items:center;gap:.7rem;margin-bottom:1.6rem;
+  }
+  .eyebrow::before{content:"";width:2rem;height:1px;background:var(--wire)}
+  h1{
+    font-family:'Space Grotesk',sans-serif;
+    font-weight:700;
+    font-size:clamp(2.4rem,6.5vw,4.6rem);
+    line-height:1.02;
+    letter-spacing:-.02em;
+    max-width:16ch;
+  }
+  h1 .glow{
+    color:var(--copper);
+    position:relative;
+  }
+  .lede{
+    margin-top:1.6rem;
+    max-width:54ch;
+    font-size:clamp(1rem,1.6vw,1.18rem);
+    color:#c7cfdd;
+  }
+  .hero-meta{
+    margin-top:2.4rem;
+    display:flex;flex-wrap:wrap;gap:.6rem 2rem;
+    font-family:'IBM Plex Mono',monospace;font-size:.8rem;color:var(--muted);
+  }
+  .hero-meta b{color:var(--paper);font-weight:600}
+
+  /* ---------- CONTROL STRIP ---------- */
+  .strip{
+    background:var(--slab);
+    border-bottom:1px solid rgba(91,155,213,.18);
+    padding:.9rem clamp(1.25rem,5vw,4rem);
+    font-family:'IBM Plex Mono',monospace;font-size:.78rem;
+    display:flex;flex-wrap:wrap;align-items:center;gap:.5rem 1.4rem;
+    color:var(--muted);
+  }
+  .strip .dot{width:.5rem;height:.5rem;border-radius:50%;background:var(--ok);box-shadow:0 0 8px var(--ok);display:inline-block;margin-right:.5rem}
+  .strip a{color:var(--wire-glow);border-bottom:1px solid transparent;transition:border-color .15s}
+  .strip a:hover{border-color:var(--wire-glow)}
+
+  /* ---------- BOOK LIST ---------- */
+  .books{
+    max-width:1080px;margin:0 auto;
+    padding:clamp(2.5rem,6vw,4.5rem) clamp(1.25rem,5vw,4rem);
+  }
+  .section-label{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:.72rem;letter-spacing:.28em;text-transform:uppercase;color:var(--muted);
+    margin-bottom:2rem;
+  }
+  .book{
+    display:grid;
+    grid-template-columns:auto 1fr auto;
+    align-items:center;gap:clamp(1rem,3vw,2.4rem);
+    padding:1.8rem 0;
+    border-top:1px solid rgba(91,155,213,.14);
+    transition:background .2s;
+  }
+  .book:last-child{border-bottom:1px solid rgba(91,155,213,.14)}
+  .book:hover{background:rgba(91,155,213,.04)}
+  .code{
+    font-family:'IBM Plex Mono',monospace;
+    font-weight:600;font-size:.85rem;
+    color:var(--copper);
+    background:rgba(198,107,61,.1);
+    border:1px solid rgba(198,107,61,.35);
+    padding:.45rem .7rem;border-radius:4px;white-space:nowrap;
+    min-width:6.4rem;text-align:center;
+  }
+  .code.theory{color:var(--wire-glow);background:rgba(91,155,213,.1);border-color:rgba(91,155,213,.35)}
+  .book-body h3{
+    font-family:'Space Grotesk',sans-serif;
+    font-weight:600;font-size:clamp(1.15rem,2.4vw,1.5rem);
+    letter-spacing:-.01em;
+  }
+  .book-body p{color:var(--muted);font-size:.92rem;margin-top:.3rem;max-width:48ch}
+  .actions{display:flex;flex-direction:column;gap:.5rem;min-width:max-content}
+  .btn{
+    font-family:'IBM Plex Mono',monospace;font-size:.78rem;font-weight:500;
+    padding:.6rem 1.1rem;border-radius:5px;text-align:center;
+    transition:transform .12s, background .15s, border-color .15s;
+    white-space:nowrap;
+  }
+  .btn:active{transform:translateY(1px)}
+  .btn-sample{
+    background:transparent;color:var(--paper);
+    border:1px solid rgba(243,239,230,.3);
+  }
+  .btn-sample:hover{border-color:var(--paper)}
+  .btn-buy{
+    background:var(--copper);color:#fff;border:1px solid var(--copper);
+  }
+  .btn-buy:hover{background:var(--copper-deep);border-color:var(--copper-deep)}
+
+  @media(max-width:680px){
+    .book{grid-template-columns:auto 1fr;grid-template-areas:"code body" "actions actions"}
+    .code{grid-area:code}
+    .book-body{grid-area:body}
+    .actions{grid-area:actions;flex-direction:row;margin-top:.4rem}
+    .actions .btn{flex:1}
+  }
+
+  /* ---------- FOOTER ---------- */
+  footer{
+    border-top:1px solid rgba(91,155,213,.18);
+    padding:clamp(2.5rem,5vw,3.5rem) clamp(1.25rem,5vw,4rem);
+    background:var(--slab);
+  }
+  .foot-inner{
+    max-width:1080px;margin:0 auto;
+    display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:1.5rem;
+  }
+  .author{font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:1.05rem}
+  .author span{display:block;font-family:'Inter';font-weight:400;font-size:.82rem;color:var(--muted);margin-top:.2rem}
+  .foot-links{display:flex;gap:1.4rem;font-family:'IBM Plex Mono',monospace;font-size:.8rem}
+  .foot-links a{color:var(--wire-glow);border-bottom:1px solid transparent;transition:border-color .15s}
+  .foot-links a:hover{border-color:var(--wire-glow)}
+  .copy{margin-top:1.5rem;font-size:.75rem;color:var(--muted);font-family:'IBM Plex Mono',monospace}
+
+  @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-inner">
+    <div class="eyebrow">Cisco Certification Study Guides</div>
+    <h1>Read a chapter<br>before you <span class="glow">commit</span>.</h1>
+    <p class="lede">A focused series of exam-prep study guides — written by a working network automation engineer, not a content farm. Every title has a free sample chapter. Download it, read it on the train, then grab the full book on Leanpub if it earns the spot on your shelf.</p>
+    <div class="hero-meta">
+      <span><b>5</b> titles</span>
+      <span><b>Free</b> samples · no email wall</span>
+      <span><b>Leanpub</b> · pay what feels fair</span>
+    </div>
+  </div>
+</header>
+
+<div class="strip">
+  <span><span class="dot"></span>samples live</span>
+  <span>format: PDF</span>
+  <span>updated 2026</span>
+  <span>full books on <a href="https://leanpub.com/u/jozefbaros" target="_blank" rel="noopener">Leanpub →</a></span>
+</div>
+
+<main class="books">
+  <div class="section-label">// Pick a track</div>
+
+  <article class="book">
+    <div class="code">200-201</div>
+    <div class="book-body">
+      <h3>CCNA Cybersecurity</h3>
+      <p>Security concepts, monitoring, host-based analysis, and incident response — mapped to the CBROPS 200-201 blueprint.</p>
+    </div>
+    <div class="actions">
+      <a class="btn btn-sample" href="ccna-cybersecurity-sample.pdf">↓ Free sample</a>
+      <a class="btn btn-buy" href="https://leanpub.com/ccna-cybersecurity" target="_blank" rel="noopener">Full book</a>
+    </div>
+  </article>
+
+  <article class="book">
+    <div class="code">350-901</div>
+    <div class="book-body">
+      <h3>AUTOCOR — DevNet Professional</h3>
+      <p>Software development &amp; design, APIs, automation, and platform integration across all four exam domains.</p>
+    </div>
+    <div class="actions">
+      <a class="btn btn-sample" href="autocor-sample.pdf">↓ Free sample</a>
+      <a class="btn btn-buy" href="https://leanpub.com/autocor" target="_blank" rel="noopener">Full book</a>
+    </div>
+  </article>
+
+  <article class="book">
+    <div class="code">350-201</div>
+    <div class="book-body">
+      <h3>CBRCOR — CyberOps Professional</h3>
+      <p>Fundamentals, techniques, processes, and automation for the SOC analyst stepping up to professional level.</p>
+    </div>
+    <div class="actions">
+      <a class="btn btn-sample" href="cbrcor-sample.pdf">↓ Free sample</a>
+      <a class="btn btn-buy" href="https://leanpub.com/cbrcor" target="_blank" rel="noopener">Full book</a>
+    </div>
+  </article>
+
+  <article class="book">
+    <div class="code">300-435</div>
+    <div class="book-body">
+      <h3>ENAUTO — Enterprise Automation</h3>
+      <p>Programmability, NETCONF/RESTCONF, model-driven telemetry, and automating Cisco IOS-XE the right way.</p>
+    </div>
+    <div class="actions">
+      <a class="btn btn-sample" href="enauto-sample.pdf">↓ Free sample</a>
+      <a class="btn btn-buy" href="https://leanpub.com/enauto" target="_blank" rel="noopener">Full book</a>
+    </div>
+  </article>
+
+  <article class="book">
+    <div class="code theory">FOUNDATIONS</div>
+    <div class="book-body">
+      <h3>CCNA Automation</h3>
+      <p>Network automation from the ground up — Python, APIs, data formats, and the mindset shift from CLI to code.</p>
+    </div>
+    <div class="actions">
+      <a class="btn btn-sample" href="ccna-automation-sample.pdf">↓ Free sample</a>
+      <a class="btn btn-buy" href="https://leanpub.com/ccna-automation" target="_blank" rel="noopener">Full book</a>
+    </div>
+  </article>
+</main>
+
+<footer>
+  <div class="foot-inner">
+    <div class="author">
+      Jozef Baroš
+      <span>Network automation engineer · Cisco study guide author</span>
+    </div>
+    <nav class="foot-links">
+      <a href="https://www.linkedin.com/in/jozefbaros" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://www.udemy.com/user/jozef-baros" target="_blank" rel="noopener">Udemy</a>
+      <a href="https://leanpub.com/u/jozefbaros" target="_blank" rel="noopener">Leanpub</a>
+    </nav>
+  </div>
+  <div class="copy">© 2026 Jozef Baroš · Samples free to share · Full editions on Leanpub</div>
+</footer>
+
+</body>
+</html>
