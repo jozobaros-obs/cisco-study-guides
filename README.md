@@ -15,15 +15,12 @@ sample to see the layout, depth, and style before purchasing the full version.
 
 | Exam | Guide | Free sample | Full book |
 |------|-------|-------------|-----------|
-| 200-201 | CyberOps Associate (Cybersecurity) | [Sample PDF](./ccna-cybersecurity-sample.pdf) | _Leanpub_ |
+| 200-201 | CCNA Cybersecurity | [Sample PDF](./ccna-cybersecurity-sample.pdf) | [Leanpub](https://leanpub.com/ccna-cybersecurity)|
 | 350-201 | CBRCOR — CyberOps Professional Core | [Sample PDF](./cbrcor-sample.pdf) | [Leanpub](https://leanpub.com/cbrcor) |
-| 350-901 | AUTOCOR | [Sample PDF](./autocor-sample.pdf) | _Leanpub_ |
-| 300-435 | ENAUTO — Enterprise Automation | [Sample PDF](./enauto-sample.pdf) | _Leanpub_ |
-| — | CCNA Automation | [Sample PDF](./ccna-automation-sample.pdf) | _Leanpub_ |
-
-> **Note:** Replace each _Leanpub_ placeholder with the real book URL once you
-> confirm the slug (only `cbrcor` is filled in). Leanpub slugs usually match the
-> sample file name, e.g. `https://leanpub.com/autocor`.
+| 350-901 | AUTOCOR CCNP Automation core exam | [Sample PDF](./autocor-sample.pdf) | [Leanpub](https://leanpub.com/autocor) |
+| 300-435 | ENAUTO — Enterprise Automation | [Sample PDF](./enauto-sample.pdf) | [Leanpub](https://leanpub.com/enauto) |
+| 200-901 | CCNA Automation | [Sample PDF](./ccna-automation-sample.pdf) | [Leanpub](https://leanpub.com/ccna-automation) |
+|   ---   | AI For Network Engineers | [Sample PDF](./AI_for_Network_Engineers_SAMPLE.pdf) | [Leanpub](https://leanpub.com/ai-network)) |
 
 ---
 
@@ -41,13 +38,14 @@ sample to see the layout, depth, and style before purchasing the full version.
 
 ```
 cisco-study-guides/
-├── index.html                      # Landing page (the hub)
-├── sitemap.xml                     # Sitemap submitted to Google Search Console
-├── ccna-cybersecurity-sample.pdf   # 200-201 free sample
-├── cbrcor-sample.pdf               # 350-201 free sample
-├── autocor-sample.pdf              # 350-901 free sample
-├── enauto-sample.pdf               # 300-435 free sample
-├── ccna-automation-sample.pdf      # CCNA Automation free sample
+├── index.html                            # Landing page (the hub)
+├── sitemap.xml                           # Sitemap submitted to Google Search Console
+├── ccna-cybersecurity-sample.pdf         # 200-201 free sample
+├── cbrcor-sample.pdf                     # 350-201 free sample
+├── autocor-sample.pdf                    # 350-901 free sample
+├── enauto-sample.pdf                     # 300-435 free sample
+├── ccna-automation-sample.pdf            # CCNA Automation free sample
+├── AI_for_Network_Engineers_SAMPLE.pdf   # AI for Network Engineers free sample
 └── README.md
 ```
 
@@ -84,17 +82,15 @@ the files in the repository are served as-is.
 
 ## ✍️ Author
 
-**Jozef Baroš** — Network Architect & automation engineer.
-Author of Cisco certification study guides and NetDevOps learning material.
+**ProDigitalJ** .
 
-- Leanpub: https://leanpub.com/u/ <!-- add your Leanpub author handle -->
-- LinkedIn: <!-- add your LinkedIn profile URL -->
+- Leanpub: [https://leanpub.com/u/](https://leanpub.com/u/prodigitalj) <!-- add your Leanpub author handle -->
 
 ---
 
 ## 📄 License
 
-The sample PDFs and book content are **© Jozef Baroš, all rights reserved**.
+The sample PDFs and book content are **© ProDigitalJ, all rights reserved**.
 They are provided for personal evaluation only and may not be redistributed.
 
 The site markup in this repository may be reused for reference.
