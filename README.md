@@ -15,11 +15,11 @@ sample to see the layout, depth, and style before purchasing the full version.
 
 | Exam | Guide | Free sample | Full book |
 |------|-------|-------------|-----------|
-| 200-201 | CCNA Cybersecurity | [Sample PDF](./ccna-cybersecurity-sample.pdf) | [Leanpub](https://leanpub.com/ccna-cybersecurity)|
-| 350-201 | CBRCOR — CyberOps Professional Core | [Sample PDF](./cbrcor-sample.pdf) | [Leanpub](https://leanpub.com/cbrcor) |
-| 350-901 | AUTOCOR CCNP Automation core exam | [Sample PDF](./autocor-sample.pdf) | [Leanpub](https://leanpub.com/autocor) |
-| 300-435 | ENAUTO — Enterprise Automation | [Sample PDF](./enauto-sample.pdf) | [Leanpub](https://leanpub.com/enauto) |
-| 200-901 | CCNA Automation | [Sample PDF](./ccna-automation-sample.pdf) | [Leanpub](https://leanpub.com/ccna-automation) |
+| 200-201 | CCNA Cybersecurity Learning Guide | [Sample PDF](./ccna-cybersecurity-sample.pdf) | [Leanpub](https://leanpub.com/ccna-cybersecurity)|
+| 350-201 | CBRCOR Learning Guide | [Sample PDF](./cbrcor-sample.pdf) | [Leanpub](https://leanpub.com/cbrcor) |
+| 350-901 | AUTOCOR Learning Guide | [Sample PDF](./autocor-sample.pdf) | [Leanpub](https://leanpub.com/autocor) |
+| 300-435 | ENAUTO Learning Guide| [Sample PDF](./enauto-sample.pdf) | [Leanpub](https://leanpub.com/enauto) |
+| 200-901 | CCNA Automation Learning Guide | [Sample PDF](./ccna-automation-sample.pdf) | [Leanpub](https://leanpub.com/ccna-automation) |
 |   ---   | AI For Network Engineers | [Sample PDF](./AI_for_Network_Engineers_SAMPLE.pdf) | [Leanpub](https://leanpub.com/ai-network)) |
 
 ---
